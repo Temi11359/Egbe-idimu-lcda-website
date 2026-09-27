@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Egbe-Idimu Local Council Development Area — departments, public services, community information and council administration.">
+  <meta name="theme-color" content="#f5b400">
+  <title>Egbe-Idimu LCDA | Unity & Progress</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><span class="dot"></span> Official Council Information Portal</span>
+      <span class="topbar-right">Lagos State • Nigeria</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="home">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Egbe-Idimu LCDA home">
+        <img src="assets/egbe-idimu-logo.jpg" alt="Egbe-Idimu Local Council Development Area logo">
+        <div>
+          <strong>EGBE-IDIMU</strong>
+          <span>LOCAL COUNCIL DEVELOPMENT AREA</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#services">Services</a>
+        <a href="#governance">Governance</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="#departments">Explore Departments <span>→</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span>●</span> Grassroots Governance • Community Development</div>
+          <h1>Government that is <em>closer</em> to the people.</h1>
+          <p class="hero-text">
+            Explore the departments and public-facing functions that support administration,
+            infrastructure, health, education, environment, finance, technology and community
+            development across Egbe-Idimu LCDA.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#departments">View Departments <span>↗</span></a>
+            <a class="btn btn-ghost" href="#about">Discover the Council</a>
+          </div>
+          <div class="hero-mini">
+            <div><b>UNITY</b><span>Shared purpose</span></div>
+            <div><b>PROGRESS</b><span>Local development</span></div>
+            <div><b>SERVICE</b><span>Resident-focused</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-glow"></div>
+          <div class="seal-ring">
+            <img src="assets/egbe-idimu-logo.jpg" alt="Egbe-Idimu LCDA crest">
+          </div>
+          <p class="hero-card-label">EGBE • IDIMU • ISHERI-OLOFIN</p>
+          <h2>One Council.<br><span>Many Services.</span></h2>
+          <p>Navigate the council's administrative and service departments from one clear digital hub.</p>
+          <a href="#services">Browse public services →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Council highlights">
+      <div class="ticker-track">
+        <span>PUBLIC SERVICE</span><i>✦</i><span>INFRASTRUCTURE</span><i>✦</i>
+        <span>HEALTH</span><i>✦</i><span>EDUCATION</span><i>✦</i>
+        <span>ENVIRONMENT</span><i>✦</i><span>COMMUNITY</span><i>✦</i>
+        <span>PUBLIC SERVICE</span><i>✦</i><span>INFRASTRUCTURE</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="container split">
+        <div>
+          <div class="section-kicker">01 / ABOUT THE COUNCIL</div>
+          <h2>A digital front door to <span>local government.</span></h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            Egbe-Idimu LCDA is a grassroots administrative area within Alimosho, Lagos State.
+            The council serves communities including Egbe, Idimu and Isheri-Olofin, with public
+            administration organized through departments and specialist units.
+          </p>
+          <p>
+            This portal is designed as a modern information experience: residents can quickly
+            understand what each department does, identify the type of help it provides, and
+            find the right route for further enquiries.
+          </p>
+        </div>
+      </div>
+
+      <div class="container stat-grid">
+        <article class="stat-card"><strong>01</strong><span>Council-wide<br>information hub</span></article>
+        <article class="stat-card"><strong>15+</strong><span>Departments &<br>specialist units</span></article>
+        <article class="stat-card"><strong>06</strong><span>Electoral wards<br>listed by LASIEC</span></article>
+        <article class="stat-card"><strong>24/7</strong><span>Digital access to<br>department information</span></article>
+      </div>
+    </section>
+
+    <section class="section departments-section" id="departments">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">02 / DEPARTMENT DIRECTORY</div>
+            <h2>Meet the <span>departments.</span></h2>
+            <p>Search, filter and open a detailed profile for each department or unit.</p>
+          </div>
+          <div class="department-tools">
+            <label class="search-box">
+              <span>⌕</span>
+              <input id="departmentSearch" type="search" placeholder="Search departments..." aria-label="Search departments">
+            </label>
+            <div class="filter-row" role="group" aria-label="Department categories">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="core">Core</button>
+              <button class="filter-btn" data-filter="service">Services</button>
+              <button class="filter-btn" data-filter="support">Support</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="department-grid" id="departmentGrid"></div>
+        <p class="no-results" id="noResults" hidden>No department matches your search.</p>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading compact">
+          <div>
+            <div class="section-kicker">03 / PUBLIC SERVICES</div>
+            <h2>Find the right <span>service lane.</span></h2>
+          </div>
+          <p class="section-side-text">Start with the area of government closest to your need.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">⌂</div>
+            <div><span class="service-number">A01</span><h3>Infrastructure & Works</h3><p>Roads, drainage, public buildings, maintenance and local infrastructure coordination.</p></div>
+            <a href="#departments" data-open-dept="works">Explore →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">+</div>
+            <div><span class="service-number">A02</span><h3>Health & Wellness</h3><p>Primary healthcare, preventive health activities, community wellness and health outreach.</p></div>
+            <a href="#departments" data-open-dept="health">Explore →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">◎</div>
+            <div><span class="service-number">A03</span><h3>Education & Youth</h3><p>Education support, school-related coordination, library services and youth development.</p></div>
+            <a href="#departments" data-open-dept="education">Explore →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">◒</div>
+            <div><span class="service-number">A04</span><h3>Environment</h3><p>Environmental health, sanitation, public hygiene and community environmental awareness.</p></div>
+            <a href="#departments" data-open-dept="environment">Explore →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">₦</div>
+            <div><span class="service-number">A05</span><h3>Finance & Revenue</h3><p>Financial administration, accounting, budgeting, expenditure control and reporting.</p></div>
+            <a href="#departments" data-open-dept="finance">Explore →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">◈</div>
+            <div><span class="service-number">A06</span><h3>Community & Social Support</h3><p>Women affairs, poverty alleviation, social services, agriculture and community programmes.</p></div>
+            <a href="#departments" data-open-dept="wapa">Explore →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section governance-section" id="governance">
+      <div class="container governance-wrap">
+        <div class="governance-copy">
+          <div class="section-kicker">04 / HOW THE COUNCIL WORKS</div>
+          <h2>Administration built around <span>service delivery.</span></h2>
+          <p>
+            Local council administration brings elected leadership, legislative oversight and
+            professional management together to coordinate services and development programmes.
+          </p>
+          <div class="governance-points">
+            <div><span>01</span><div><b>Executive leadership</b><small>Provides policy direction and executive coordination.</small></div></div>
+            <div><span>02</span><div><b>Legislative arm</b><small>Represents wards and performs local legislative and oversight functions.</small></div></div>
+            <div><span>03</span><div><b>Management team</b><small>Professional departments and units translate approved plans into services.</small></div></div>
+          </div>
+        </div>
+        <div class="governance-visual">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="gov-center"><span>LCDA</span><b>UNITY<br>& PROGRESS</b></div>
+          <div class="gov-node node-one">Executive</div>
+          <div class="gov-node node-two">Legislative</div>
+          <div class="gov-node node-three">Management</div>
+          <div class="gov-node node-four">Residents</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wards-section">
+      <div class="container">
+        <div class="section-heading compact">
+          <div>
+            <div class="section-kicker">05 / REPRESENTATION</div>
+            <h2>Seven wards, <span>one community.</span></h2>
+          </div>
+          <p class="section-side-text">Ward information shown here follows the Lagos State Independent Electoral Commission listing.</p>
+        </div>
+        <div class="wards-grid">
+          <div class="ward"><b>01</b><span>EGBE</span></div>
+          <div class="ward"><b>02</b><span>IDIMU</span></div>
+          <div class="ward"><b>03</b><span>IGANDO</span></div>
+          <div class="ward"><b>04</b><span>IKOTUN</span></div>
+          <div class="ward"><b>05</b><span>IGANDO II</span></div>
+          <div class="ward"><b>06</b><span>ISHERI</span></div>
+          <div class="ward"><b>07</b><span>IDIMU II</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-panel">
+        <div>
+          <div class="section-kicker">06 / CONTACT & VISIT</div>
+          <h2>Need to reach the <span>council?</span></h2>
+          <p>Use the council's physical location for in-person enquiries and official administrative matters.</p>
+        </div>
+        <div class="contact-details">
+          <div class="contact-line"><span class="contact-icon">⌖</span><div><small>COUNCIL LOCATION</small><strong>1 Isheri Olofin Roundabout,<br>Isheri/Lasu Road, Isheri-Olofin, Lagos</strong></div></div>
+          <div class="contact-line"><span class="contact-icon">◷</span><div><small>PUBLIC OFFICE HOURS</small><strong>Monday – Friday<br>8:00 AM – 4:00 PM</strong></div></div>
+          <div class="contact-note">For official enquiries, confirm current contact channels directly with the council before visiting.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="assets/egbe-idimu-logo.jpg" alt="Egbe-Idimu LCDA logo">
+        <div><strong>EGBE-IDIMU LCDA</strong><span>UNITY & PROGRESS</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a><a href="#departments">Departments</a><a href="#services">Services</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Egbe-Idimu LCDA information portal concept.</span>
+      <span>Designed for clarity • accessibility • community service</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="departmentModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Close department details">×</button>
+      <div class="modal-top">
+        <span class="modal-icon" id="modalIcon">✦</span>
+        <div><span class="modal-tag" id="modalTag">DEPARTMENT</span><h2 id="modalTitle">Department</h2></div>
+      </div>
+      <p class="modal-lead" id="modalLead"></p>
+      <div class="modal-columns">
+        <div><h3>Core responsibilities</h3><ul id="modalResponsibilities"></ul></div>
+        <div><h3>Typical service areas</h3><div class="modal-chips" id="modalChips"></div></div>
+      </div>
+      <div class="modal-footer-note">Department descriptions are informational and reflect common Lagos LCDA administrative functions. Current service procedures and office contacts should be confirmed with the council.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
